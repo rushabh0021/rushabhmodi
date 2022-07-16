@@ -93,12 +93,19 @@ input[class^='btn-']:hover {
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
-
+  grid-gap: 30px;
+}
+.chat-app-img {
+  height: 307px !important;
+}
+.kanban-image {
+  height: 246px !important;
+}
 .item {
   position: relative;
   background: #ffbc00;
-  overflow: hidden; }
+  overflow: hidden; 
+box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);}
   .item::after {
     content: "";
     position: absolute;
@@ -154,7 +161,7 @@ input[class^='btn-']:hover {
     top: 50%;
     transform: translateY(-50%); }
   .item-text-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0 1rem;
     margin: 5px 0 0 0; }
   .item-text-category {
@@ -302,7 +309,8 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio'  'aw1 aw2 aw3';
+  grid-template-areas: 'bioimage bio bio' 
+ 'aw1 aw2 aw3';
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
@@ -366,7 +374,9 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-template-areas: 'name email'
+ 'subject phone'
+ 'message message';
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -444,11 +454,19 @@ img {
   .items {
     grid-template-columns: 1fr; }
   #about-a .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'aw1'
+ 'aw2'
+ 'aw3'; }
   #about-c {
     display: none; }
   #contact-a .text-fields {
-    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+    grid-template-areas: 'name'
+ 'subject'
+ 'email'
+ 'phone'
+ 'message'; }
   #contact-b div {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
