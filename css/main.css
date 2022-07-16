@@ -98,9 +98,9 @@ input[class^='btn-']:hover {
 .chat-app-img {
   height: 307px !important;
 }
-.kanban-image {
+/* .kanban-image {
   height: 246px !important;
-}
+} */
 .item {
   position: relative;
   background: #ffbc00;
